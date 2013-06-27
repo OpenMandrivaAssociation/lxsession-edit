@@ -1,13 +1,13 @@
 Summary:	Manage desktop session autostarts
-Name:     	lxsession-edit
+Name:		lxsession-edit
 Version:	0.2.0
-Release:	%mkrel 1
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Other
-Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
-URL:		http://lxde.sourceforge.net/
-BuildRequires:	pkgconfig(gtk+-x11-2.0)
+Url:		http://lxde.sourceforge.net/
+Source0:	http://dfn.dl.sourceforge.net/sourceforge/lxde/%{name}-%{version}.tar.gz
 BuildRequires:	intltool
+BuildRequires:	pkgconfig(gtk+-x11-2.0)
 
 %description
 lxsession-edit is a tool used to manage desktop session autostarts,
@@ -21,13 +21,12 @@ especially for lxsession lite.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%{find_lang} %{name}
+%find_lang %{name}
 
 %files -f %{name}.lang
-%defattr(-, root, root)
-%{_bindir}/%name
-%{_datadir}/%name
+%{_bindir}/%{name}
+%{_datadir}/%{name}
 %{_datadir}/applications/*.desktop
+
