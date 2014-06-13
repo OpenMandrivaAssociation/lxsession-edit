@@ -1,7 +1,7 @@
 Summary:	Manage desktop session autostarts
 Name:		lxsession-edit
 Version:	0.2.0
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Url:		http://lxde.sourceforge.net/
