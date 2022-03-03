@@ -33,15 +33,14 @@ this can (partially) be configured through a simple GUI - LXSession Edit.
 #---------------------------------------------------------------------------
 
 %prep
-%setup -q
-%apply_patches
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_install
 
 %install
-%makeinstall_std
+%makei_nstall
 
 # locales
 %find_lang %{name}
