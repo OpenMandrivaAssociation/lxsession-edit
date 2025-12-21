@@ -7,6 +7,11 @@ Group:		Graphical desktop/Other
 Url:		https://wiki.lxde.org/en/LXSession_Edit
 Source0:	https://downloads.sourceforge.net/lxde/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(gtk+-x11-2.0)
 
